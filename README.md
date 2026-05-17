@@ -47,11 +47,11 @@
 ## Инструкция к использованию
 
 Установить репозиторий
-```git clone https://github.com/TinaGrav/lab_python2_3```
+```git clone https://github.com/TinaGrav/lab_python2_4```
 
 перейти в папку с содержимым лабы 
 
-```cd lab_python2_3```
+```cd lab_python2_4```
  
 
 ### Запустить 
