@@ -4,7 +4,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..',
 
 import unittest
 from unittest.mock import patch
-from src.input_source import Input_source, check_num, check_id, check_payload
+from src.source_processing.input_source import Input_source, check_num, check_id, check_payload
 
 
 class TestCheckNum(unittest.TestCase):

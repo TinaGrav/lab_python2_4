@@ -1,8 +1,9 @@
 import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
-from src.file_sourced import File_source
-import unittest
+from src.source_processing.file_sourced import File_source
+
+
 class TestFileSource:
    def test_get_tasks_success(self):
       source = File_source("test_file.json")

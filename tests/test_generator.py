@@ -1,7 +1,7 @@
 import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
-from src.generator import Generator_source
+from src.source_processing.generator import Generator_source
 import unittest
 class TestGeneratorSource(unittest.TestCase):
     def test_generator_creates_object(self):
