@@ -1,10 +1,10 @@
-from src.source_processing.file_sourced import File_source
-from src.source_processing.generator import Generator_source
-from src.source_processing.input_source import Input_source
+from source_processing.file_sourced import File_source
+from source_processing.generator import Generator_source
+from source_processing.input_source import Input_source
 from create_task import create_task
 from task_queue import TaskQueue
-from src.async_executor.executor import AsyncTaskExecutor
-from src.async_executor.handlers import FaultyHandler, PrintHandler, PriorityHandler, TaskHandlerProtocol
+from async_executor.executor import AsyncTaskExecutor
+from async_executor.handlers import FaultyHandler, PrintHandler, PriorityHandler, TaskHandlerProtocol
 from class_task import Task
 import asyncio
 

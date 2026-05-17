@@ -1,7 +1,7 @@
 import asyncio
 import logging
 from typing import Protocol, runtime_checkable
-from src.class_task import Task
+from class_task import Task
 
 logging.basicConfig(   # настройка логирования
     level=logging.INFO,
@@ -46,6 +46,6 @@ class FaultyHandler:  # имитация ошибок для демонстра�
     async def handle(self, task: Task) -> None:
         self._count += 1
         if self._count % 2 == 0:
-            raise RuntimeError(f"Имитация ошибки при обработке задачи id={task.id}")
+            raise RuntimeError(f"Имитация ошибки")
         logger.info(f"[FaultyHandler] Задача id={task.id} успешно обработана")
         await asyncio.sleep(0.2)

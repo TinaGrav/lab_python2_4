@@ -1,8 +1,8 @@
 import asyncio
 import logging
 from typing import Protocol, runtime_checkable
-from src.class_task import Task
-from handlers import TaskHandlerProtocol
+from class_task import Task
+from async_executor.handlers import TaskHandlerProtocol
 
 
 class AsyncTaskExecutor:
